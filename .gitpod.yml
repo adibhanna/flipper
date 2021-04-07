@@ -1,0 +1,11 @@
+image: paritytech/ink-ci-linux
+
+tasks: 
+  - init: cargo +nightly contract build
+
+vscode:
+  extensions:
+    - matklad.rust-analyzer
+    - bungcip.better-toml
+
+
