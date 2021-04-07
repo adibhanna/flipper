@@ -1,7 +1,5 @@
-image: paritytech/ink-ci-linux
-
-tasks: 
-  - init: cargo +nightly contract build
+image: 
+  file: .gitpod.Dockerfile
 
 vscode:
   extensions:

@@ -1,22 +1,4 @@
-ARG VCS_REF=master
-ARG BUILD_DATE
-ARG REGISTRY_PATH=paritytech
-
-########## Rust
 FROM paritytech/base-ci:latest
-
-# metadata
-LABEL io.parity.image.authors="devops-team@parity.io" \
-    io.parity.image.vendor="Parity Technologies" \
-    io.parity.image.title="paritytech/ink-ci-linux" \
-    io.parity.image.description="Inherits from base-ci-linux:latest. \
-    rust nightly, clippy, rustfmt, miri, rust-src grcov, rust-covfix, cargo-contract, xargo, binaryen" \
-    io.parity.image.source="https://github.com/paritytech/scripts/blob/${VCS_REF}/\
-    dockerfiles/ink-ci-linux/Dockerfile" \
-    io.parity.image.documentation="https://github.com/paritytech/scripts/blob/${VCS_REF}/\
-    dockerfiles/ink-ci-linux/README.md" \
-    io.parity.image.revision="${VCS_REF}" \
-    io.parity.image.created="${BUILD_DATE}"
 
 WORKDIR /builds
 
@@ -43,3 +25,6 @@ RUN	set -eux; \
 
 
 WORKDIR /home/coder
+RUN cargo contract new flipper
+WORKDIR /home/coder/flipper
+RUN cargo +nightly contract build
