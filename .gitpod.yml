@@ -4,6 +4,7 @@ workspaceLocation: "./flipper"
 
 tasks: 
   - init: cargo contract new flipper
+    command: cd flipper
     command: cargo +nightly contract build
 
 vscode:
