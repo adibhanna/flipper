@@ -3,8 +3,8 @@ image: paritytech/ink-ci-linux
 workspaceLocation: "./flipper"
 
 tasks: 
-  - command: cargo contract new flipper && cd flipper
-  - command: cargo +nightly contract build
+  - command: cargo contract new flipper
+  - command: cd /flipper && cargo +nightly contract build
 
 vscode:
   extensions:
