@@ -1,7 +1,7 @@
-image: paritytech/ink-ci-linux
+image: 
+  file: .gitpod.Dockerfile
 
-tasks: 
-  - init: cargo +nightly contract build
+workspaceLocation: 'flipper'
 
 vscode:
   extensions:
