@@ -1,6 +1,6 @@
 image: paritytech/ink-ci-linux
 
-workspaceLocation: "flipper"
+workspaceLocation: "flipper/flipper"
 
 tasks: 
   - init: cargo +nightly contract build
