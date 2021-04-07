@@ -6,7 +6,7 @@ tasks:
   - init: cargo contract new flipper
     command: cargo +nightly contract build
 
-  vscode:
+vscode:
   extensions:
     - matklad.rust-analyzer
     - bungcip.better-toml
