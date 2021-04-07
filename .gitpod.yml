@@ -1,7 +1,5 @@
 image: paritytech/ink-ci-linux
 
-workspaceLocation: "."
-
 tasks: 
   - init: cargo +nightly contract build
 
