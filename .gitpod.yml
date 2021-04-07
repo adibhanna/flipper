@@ -1,7 +1,7 @@
 image: 
   file: .gitpod.Dockerfile
 
-workspaceLocation: 'code/flipper'
+workspaceLocation: 'flipper'
 
 vscode:
   extensions:
