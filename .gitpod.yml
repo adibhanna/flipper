@@ -4,8 +4,8 @@ image:
 workspaceLocation: "flipper/flipper"
 
 tasks:
-  - init: cargo contract new flipper
-    command: cd flipper && cargo +nightly contract build
+  - init: cargo contract new flipper && \
+          cd flipper && cargo +nightly contract build
 
 vscode:
   extensions:
