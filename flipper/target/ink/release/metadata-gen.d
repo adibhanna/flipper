@@ -1,1 +1,0 @@
-/Users/adibhanna/Developer/parity/code/flipper/flipper/target/ink/release/metadata-gen: /Users/adibhanna/Developer/parity/code/flipper/flipper/lib.rs /var/folders/_r/mq8xmvc54219g2yc6nhrw5440000gn/T/cargo-contract_kWsDxQ/.ink/metadata_gen/main.rs
