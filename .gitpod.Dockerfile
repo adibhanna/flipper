@@ -2,7 +2,6 @@ ARG VCS_REF=master
 ARG BUILD_DATE
 ARG REGISTRY_PATH=paritytech
 
-########## Rust
 FROM paritytech/base-ci:latest
 
 # metadata
@@ -40,10 +39,3 @@ RUN	set -eux; \
     cargo-contract --version && \
     # Clean up and remove compilation artifacts that a cargo install creates (>250M).
     rm -rf "${CARGO_HOME}/registry" "${CARGO_HOME}/git" /root/.cache/sccache
-
-# USER 1000
-# ENV USER=coder
-# WORKDIR /workspace
-# RUN cargo contract new flipper
-# WORKDIR /workspace/flipper
-# RUN cargo +nightly contract build
