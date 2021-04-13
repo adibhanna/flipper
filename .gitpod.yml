@@ -11,6 +11,8 @@ vscode:
   extensions:
     - matklad.rust-analyzer
     - bungcip.better-toml
+    - serayuzgur.crates
+    - belfz.search-crates-io
 
 github:
   prebuilds:
