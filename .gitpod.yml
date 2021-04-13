@@ -1,7 +1,5 @@
 image: paritytech/ink-ci-linux:production
 
-# workspaceLocation: "flipper"
-
 tasks:
   - init: cd flipper && cargo contract build
   - openIn: bottom
