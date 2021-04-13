@@ -1,8 +1,10 @@
 image: 
   file: .gitpod.Dockerfile
 
+workspaceLocation: "flipper"
+
 tasks:
-  - init: cargo +nightly contract build
+  - init: cd flipper && cargo +nightly contract build
 
 vscode:
   extensions:
