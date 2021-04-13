@@ -1,9 +1,9 @@
 image: paritytech/ink-ci-linux:production
 
 tasks:
-  - init: cd flipper && cargo contract build
+  - init: cargo contract build
   - openIn: bottom
-    command: cd flipper && clear
+    command: clear
 
 vscode:
   extensions:
