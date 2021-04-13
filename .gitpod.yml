@@ -1,10 +1,11 @@
 image: paritytech/ink-ci-linux:production
-  # file: .gitpod.Dockerfile
 
 # workspaceLocation: "flipper"
 
 tasks:
   - init: cd flipper && cargo contract build
+  - openIn: bottom
+    command: cd flipper
 
 vscode:
   extensions:
