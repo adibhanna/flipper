@@ -9,10 +9,10 @@ tasks:
 
 vscode:
   extensions:
-    - matklad.rust-analyzer
-    - bungcip.better-toml
-    - serayuzgur.crates
-    - belfz.search-crates-io
+    - matklad.rust-analyzer # Rust analyzer
+    - bungcip.better-toml # TOML Support 
+    - serayuzgur.crates # Crates Support
+    - belfz.search-crates-io # Search from Creates from within VSCode
 
 github:
   prebuilds:
