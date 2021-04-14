@@ -1,9 +1,10 @@
 image: paritytech/ink-ci-linux:production
 
 tasks:
-  - prebuild: code --install-extension https://github.com/paritytech/vscode-substrate/releases/download/v0.5.2/vscode-substrate.vsix
+  # - prebuild: code --install-extension https://github.com/paritytech/vscode-substrate/releases/download/v0.5.2/vscode-substrate.vsix
   - init: cargo contract build
-  - openIn: bottom
+    command: code --install-extension https://github.com/paritytech/vscode-substrate/releases/download/v0.5.2/vscode-substrate.vsix
+  # - openIn: bottom
     command: clear
 
 vscode:
