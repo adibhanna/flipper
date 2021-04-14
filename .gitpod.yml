@@ -1,9 +1,7 @@
 image: paritytech/ink-ci-linux:production
 
 tasks:
-  # - prebuild: code --install-extension https://github.com/paritytech/vscode-substrate/releases/download/v0.5.2/vscode-substrate.vsix
   - init: cargo contract build
-  - command: code --install-extension https://github.com/paritytech/vscode-substrate/releases/download/v0.5.2/vscode-substrate.vsix
 
 vscode:
   extensions:
@@ -11,6 +9,7 @@ vscode:
     - bungcip.better-toml # TOML Support 
     - serayuzgur.crates # Crates Support
     - belfz.search-crates-io # Search from Creates from within VSCode
+    - https://github.com/paritytech/vscode-substrate/releases/download/v0.5.2/vscode-substrate.vsix # Substrate VSCode extension
 
 github:
   prebuilds:
