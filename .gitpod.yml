@@ -2,6 +2,7 @@ image: paritytech/ink-ci-linux:production
 
 tasks:
   - init: cargo contract build
+    command: code --install-extension .vscode/vscode-substrate.vsix
   - openIn: bottom
     command: clear
 
