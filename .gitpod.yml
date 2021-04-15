@@ -2,8 +2,6 @@ image: paritytech/ink-ci-linux:production
 
 tasks:
   - init: cargo install canvas-node --git https://github.com/paritytech/canvas-node.git --tag v0.1.5 --force --locked && cargo contract build
-
-  # canvas --dev --tmp
 vscode:
   extensions:
     - matklad.rust-analyzer # Rust analyzer
